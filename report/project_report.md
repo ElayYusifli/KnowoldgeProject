@@ -6,6 +6,10 @@ TODO: Name Surname, email@example.com
 
 TODO: Name Surname, email@example.com
 
+GitHub Repository: https://github.com/ElayYusifli/KnowoldgeProject
+
+WIDOCO Documentation: https://elayyusifli.github.io/KnowoldgeProject/
+
 ## Executive Summary
 
 This project designs and implements a semantic knowledge engineering solution for academic course recommendation. The system models university courses, students, instructors, departments, topics, skills, prerequisites, and recommendations using an OWL ontology. A sample course catalog is transformed into RDF/Turtle with RDFlib, producing a knowledge graph that supports transparent SPARQL querying. The project includes SHACL validation rules to check required course metadata, credit ranges, course levels, and recommendation links. It also proposes an LLM integration workflow in which natural-language student questions are mapped to SPARQL queries and answered only with knowledge graph-grounded results. The main contribution of the project is an explainable course recommendation structure where each recommendation can be traced to student interests, completed prerequisites, missing requirements, and target skills.
