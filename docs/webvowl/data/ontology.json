@@ -1,0 +1,613 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://example.org/acr" ],
+    "title" : {
+      "undefined" : "Smart Academic Course Recommendation Ontology"
+    },
+    "iri" : "https://example.org/acr#",
+    "version" : "0.2.0",
+    "author" : [ "TODO: Team Name" ],
+    "description" : {
+      "undefined" : "An ontology for modeling courses, students, prerequisites, skills, and academic recommendations."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "TODO: Team Name",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-06-17",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.2.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Smart Academic Course Recommendation Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://example.org/acr#Course",
+    "baseIri" : "https://example.org/acr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Course",
+      "undefined" : "Course"
+    },
+    "comment" : {
+      "undefined" : "A university course offered by a department."
+    },
+    "id" : "0"
+  }, {
+    "iri" : "https://example.org/acr#Department",
+    "baseIri" : "https://example.org/acr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Department",
+      "undefined" : "Department"
+    },
+    "id" : "9"
+  }, {
+    "iri" : "https://example.org/acr#Instructor",
+    "baseIri" : "https://example.org/acr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Instructor",
+      "undefined" : "Instructor"
+    },
+    "id" : "18"
+  }, {
+    "iri" : "https://example.org/acr#Student",
+    "baseIri" : "https://example.org/acr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Student",
+      "undefined" : "Student"
+    },
+    "comment" : {
+      "undefined" : "A learner receiving course recommendations."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://example.org/acr#Recommendation",
+    "baseIri" : "https://example.org/acr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recommendation",
+      "undefined" : "Recommendation"
+    },
+    "comment" : {
+      "undefined" : "A recommendation connecting a student to a course with an explanation."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "5",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://example.org/acr#DataSource",
+    "baseIri" : "https://example.org/acr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataSource",
+      "undefined" : "Data Source"
+    },
+    "comment" : {
+      "undefined" : "A dataset, document, API, or catalog used to populate the knowledge graph."
+    },
+    "id" : "26"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://example.org/acr#StudentBehaviorSignal",
+    "baseIri" : "https://example.org/acr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StudentBehaviorSignal",
+      "undefined" : "Student Behavior Signal"
+    },
+    "comment" : {
+      "undefined" : "An observable student-related signal such as completed courses, interests, or target skills."
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://example.org/acr#Topic",
+    "baseIri" : "https://example.org/acr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Topic",
+      "undefined" : "Topic"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "https://example.org/acr#Skill",
+    "baseIri" : "https://example.org/acr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Skill",
+      "undefined" : "Skill"
+    },
+    "id" : "24"
+  }, {
+    "iri" : "https://example.org/acr#ResearchStudy",
+    "baseIri" : "https://example.org/acr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResearchStudy",
+      "undefined" : "Research Study"
+    },
+    "comment" : {
+      "undefined" : "A research work used to guide ontology, reasoning, data processing, or LLM integration decisions."
+    },
+    "id" : "6"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://example.org/acr#hasBehaviorSignal",
+    "baseIri" : "https://example.org/acr",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasBehaviorSignal",
+      "undefined" : "has behavior signal"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://example.org/acr#informedByStudy",
+    "baseIri" : "https://example.org/acr",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "informedByStudy",
+      "undefined" : "informed by study"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://example.org/acr#signalValue",
+    "baseIri" : "https://example.org/acr",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "signalValue",
+      "undefined" : "signal value"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://example.org/acr#explanation",
+    "baseIri" : "https://example.org/acr",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "explanation",
+      "undefined" : "explanation"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://example.org/acr#hasPrerequisite",
+    "baseIri" : "https://example.org/acr",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasPrerequisite",
+      "undefined" : "has prerequisite"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://example.org/acr#confidenceScore",
+    "baseIri" : "https://example.org/acr",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "confidenceScore",
+      "undefined" : "confidence score"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://example.org/acr#courseTitle",
+    "baseIri" : "https://example.org/acr",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "courseTitle",
+      "undefined" : "course title"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://example.org/acr#coversTopic",
+    "baseIri" : "https://example.org/acr",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "coversTopic",
+      "undefined" : "covers topic"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://example.org/acr#recommendedFor",
+    "baseIri" : "https://example.org/acr",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "recommendedFor",
+      "undefined" : "recommended for"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://example.org/acr#developsSkill",
+    "baseIri" : "https://example.org/acr",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "developsSkill",
+      "undefined" : "develops skill"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://example.org/acr#completedCourse",
+    "baseIri" : "https://example.org/acr",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "completedCourse",
+      "undefined" : "completed course"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://example.org/acr#derivedFromSource",
+    "baseIri" : "https://example.org/acr",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "derivedFromSource",
+      "undefined" : "derived from source"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://example.org/acr#signalType",
+    "baseIri" : "https://example.org/acr",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "signalType",
+      "undefined" : "signal type"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://example.org/acr#sourceFormat",
+    "baseIri" : "https://example.org/acr",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "sourceFormat",
+      "undefined" : "source format"
+    },
+    "domain" : "26",
+    "attributes" : [ "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://example.org/acr#offeredBy",
+    "baseIri" : "https://example.org/acr",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "offeredBy",
+      "undefined" : "offered by"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://example.org/acr#recommendedCourse",
+    "baseIri" : "https://example.org/acr",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "recommendedCourse",
+      "undefined" : "recommended course"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://example.org/acr#level",
+    "baseIri" : "https://example.org/acr",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "level",
+      "undefined" : "course level"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://example.org/acr#credits",
+    "baseIri" : "https://example.org/acr",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "credits",
+      "undefined" : "credits"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://example.org/acr#taughtBy",
+    "baseIri" : "https://example.org/acr",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "taughtBy",
+      "undefined" : "taught by"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://example.org/acr#interestedIn",
+    "baseIri" : "https://example.org/acr",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "interestedIn",
+      "undefined" : "interested in"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://example.org/acr#courseCode",
+    "baseIri" : "https://example.org/acr",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "courseCode",
+      "undefined" : "course code"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://example.org/acr#sourceName",
+    "baseIri" : "https://example.org/acr",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "sourceName",
+      "undefined" : "source name"
+    },
+    "domain" : "26",
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  } ]
+}

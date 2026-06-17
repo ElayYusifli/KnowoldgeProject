@@ -1,0 +1,245 @@
+<https://example.org/acr#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://example.org/acr#> <http://purl.org/dc/terms/created> "2026-06-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://example.org/acr#> <http://purl.org/dc/terms/creator> "TODO: Team Name" .
+<https://example.org/acr#> <http://purl.org/dc/terms/description> "An ontology for modeling courses, students, prerequisites, skills, and academic recommendations." .
+<https://example.org/acr#> <http://purl.org/dc/terms/title> "Smart Academic Course Recommendation Ontology" .
+<https://example.org/acr#> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://example.org/acr#completedCourse
+<https://example.org/acr#completedCourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/acr#completedCourse> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Student> .
+<https://example.org/acr#completedCourse> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/acr#Course> .
+<https://example.org/acr#completedCourse> <http://www.w3.org/2000/01/rdf-schema#label> "completed course" .
+# 
+# https://example.org/acr#coversTopic
+<https://example.org/acr#coversTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/acr#coversTopic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Course> .
+<https://example.org/acr#coversTopic> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/acr#Topic> .
+<https://example.org/acr#coversTopic> <http://www.w3.org/2000/01/rdf-schema#label> "covers topic" .
+# 
+# https://example.org/acr#derivedFromSource
+<https://example.org/acr#derivedFromSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/acr#derivedFromSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://example.org/acr#derivedFromSource> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/acr#DataSource> .
+<https://example.org/acr#derivedFromSource> <http://www.w3.org/2000/01/rdf-schema#label> "derived from source" .
+# 
+# https://example.org/acr#developsSkill
+<https://example.org/acr#developsSkill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/acr#developsSkill> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Course> .
+<https://example.org/acr#developsSkill> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/acr#Skill> .
+<https://example.org/acr#developsSkill> <http://www.w3.org/2000/01/rdf-schema#label> "develops skill" .
+# 
+# https://example.org/acr#hasBehaviorSignal
+<https://example.org/acr#hasBehaviorSignal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/acr#hasBehaviorSignal> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Student> .
+<https://example.org/acr#hasBehaviorSignal> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/acr#StudentBehaviorSignal> .
+<https://example.org/acr#hasBehaviorSignal> <http://www.w3.org/2000/01/rdf-schema#label> "has behavior signal" .
+# 
+# https://example.org/acr#hasPrerequisite
+<https://example.org/acr#hasPrerequisite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/acr#hasPrerequisite> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Course> .
+<https://example.org/acr#hasPrerequisite> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/acr#Course> .
+<https://example.org/acr#hasPrerequisite> <http://www.w3.org/2000/01/rdf-schema#label> "has prerequisite" .
+# 
+# https://example.org/acr#informedByStudy
+<https://example.org/acr#informedByStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/acr#informedByStudy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://example.org/acr#informedByStudy> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/acr#ResearchStudy> .
+<https://example.org/acr#informedByStudy> <http://www.w3.org/2000/01/rdf-schema#label> "informed by study" .
+# 
+# https://example.org/acr#interestedIn
+<https://example.org/acr#interestedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/acr#interestedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Student> .
+<https://example.org/acr#interestedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/acr#Topic> .
+<https://example.org/acr#interestedIn> <http://www.w3.org/2000/01/rdf-schema#label> "interested in" .
+# 
+# https://example.org/acr#offeredBy
+<https://example.org/acr#offeredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/acr#offeredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Course> .
+<https://example.org/acr#offeredBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/acr#Department> .
+<https://example.org/acr#offeredBy> <http://www.w3.org/2000/01/rdf-schema#label> "offered by" .
+# 
+# https://example.org/acr#recommendedCourse
+<https://example.org/acr#recommendedCourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/acr#recommendedCourse> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Recommendation> .
+<https://example.org/acr#recommendedCourse> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/acr#Course> .
+<https://example.org/acr#recommendedCourse> <http://www.w3.org/2000/01/rdf-schema#label> "recommended course" .
+# 
+# https://example.org/acr#recommendedFor
+<https://example.org/acr#recommendedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/acr#recommendedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Recommendation> .
+<https://example.org/acr#recommendedFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/acr#Student> .
+<https://example.org/acr#recommendedFor> <http://www.w3.org/2000/01/rdf-schema#label> "recommended for" .
+# 
+# https://example.org/acr#taughtBy
+<https://example.org/acr#taughtBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://example.org/acr#taughtBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Course> .
+<https://example.org/acr#taughtBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://example.org/acr#Instructor> .
+<https://example.org/acr#taughtBy> <http://www.w3.org/2000/01/rdf-schema#label> "taught by" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://example.org/acr#confidenceScore
+<https://example.org/acr#confidenceScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://example.org/acr#confidenceScore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Recommendation> .
+<https://example.org/acr#confidenceScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://example.org/acr#confidenceScore> <http://www.w3.org/2000/01/rdf-schema#label> "confidence score" .
+# 
+# https://example.org/acr#courseCode
+<https://example.org/acr#courseCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://example.org/acr#courseCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Course> .
+<https://example.org/acr#courseCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://example.org/acr#courseCode> <http://www.w3.org/2000/01/rdf-schema#label> "course code" .
+# 
+# https://example.org/acr#courseTitle
+<https://example.org/acr#courseTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://example.org/acr#courseTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Course> .
+<https://example.org/acr#courseTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://example.org/acr#courseTitle> <http://www.w3.org/2000/01/rdf-schema#label> "course title" .
+# 
+# https://example.org/acr#credits
+<https://example.org/acr#credits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://example.org/acr#credits> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Course> .
+<https://example.org/acr#credits> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/acr#credits> <http://www.w3.org/2000/01/rdf-schema#label> "credits" .
+# 
+# https://example.org/acr#explanation
+<https://example.org/acr#explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://example.org/acr#explanation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Recommendation> .
+<https://example.org/acr#explanation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://example.org/acr#explanation> <http://www.w3.org/2000/01/rdf-schema#label> "explanation" .
+# 
+# https://example.org/acr#level
+<https://example.org/acr#level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://example.org/acr#level> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#Course> .
+<https://example.org/acr#level> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/acr#level> <http://www.w3.org/2000/01/rdf-schema#label> "course level" .
+# 
+# https://example.org/acr#signalType
+<https://example.org/acr#signalType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://example.org/acr#signalType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#StudentBehaviorSignal> .
+<https://example.org/acr#signalType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://example.org/acr#signalType> <http://www.w3.org/2000/01/rdf-schema#label> "signal type" .
+# 
+# https://example.org/acr#signalValue
+<https://example.org/acr#signalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://example.org/acr#signalValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#StudentBehaviorSignal> .
+<https://example.org/acr#signalValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://example.org/acr#signalValue> <http://www.w3.org/2000/01/rdf-schema#label> "signal value" .
+# 
+# https://example.org/acr#sourceFormat
+<https://example.org/acr#sourceFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://example.org/acr#sourceFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#DataSource> .
+<https://example.org/acr#sourceFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://example.org/acr#sourceFormat> <http://www.w3.org/2000/01/rdf-schema#label> "source format" .
+# 
+# https://example.org/acr#sourceName
+<https://example.org/acr#sourceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://example.org/acr#sourceName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://example.org/acr#DataSource> .
+<https://example.org/acr#sourceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://example.org/acr#sourceName> <http://www.w3.org/2000/01/rdf-schema#label> "source name" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://example.org/acr#Course
+<https://example.org/acr#Course> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://example.org/acr#Course> <http://www.w3.org/2000/01/rdf-schema#comment> "A university course offered by a department." .
+<https://example.org/acr#Course> <http://www.w3.org/2000/01/rdf-schema#label> "Course" .
+# 
+# https://example.org/acr#DataSource
+<https://example.org/acr#DataSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://example.org/acr#DataSource> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset, document, API, or catalog used to populate the knowledge graph." .
+<https://example.org/acr#DataSource> <http://www.w3.org/2000/01/rdf-schema#label> "Data Source" .
+# 
+# https://example.org/acr#Department
+<https://example.org/acr#Department> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://example.org/acr#Department> <http://www.w3.org/2000/01/rdf-schema#label> "Department" .
+# 
+# https://example.org/acr#Instructor
+<https://example.org/acr#Instructor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://example.org/acr#Instructor> <http://www.w3.org/2000/01/rdf-schema#label> "Instructor" .
+# 
+# https://example.org/acr#Recommendation
+<https://example.org/acr#Recommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://example.org/acr#Recommendation> <http://www.w3.org/2000/01/rdf-schema#comment> "A recommendation connecting a student to a course with an explanation." .
+<https://example.org/acr#Recommendation> <http://www.w3.org/2000/01/rdf-schema#label> "Recommendation" .
+# 
+# https://example.org/acr#ResearchStudy
+<https://example.org/acr#ResearchStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://example.org/acr#ResearchStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "A research work used to guide ontology, reasoning, data processing, or LLM integration decisions." .
+<https://example.org/acr#ResearchStudy> <http://www.w3.org/2000/01/rdf-schema#label> "Research Study" .
+# 
+# https://example.org/acr#Skill
+<https://example.org/acr#Skill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://example.org/acr#Skill> <http://www.w3.org/2000/01/rdf-schema#label> "Skill" .
+# 
+# https://example.org/acr#Student
+<https://example.org/acr#Student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://example.org/acr#Student> <http://www.w3.org/2000/01/rdf-schema#comment> "A learner receiving course recommendations." .
+<https://example.org/acr#Student> <http://www.w3.org/2000/01/rdf-schema#label> "Student" .
+# 
+# https://example.org/acr#StudentBehaviorSignal
+<https://example.org/acr#StudentBehaviorSignal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://example.org/acr#StudentBehaviorSignal> <http://www.w3.org/2000/01/rdf-schema#comment> "An observable student-related signal such as completed courses, interests, or target skills." .
+<https://example.org/acr#StudentBehaviorSignal> <http://www.w3.org/2000/01/rdf-schema#label> "Student Behavior Signal" .
+# 
+# https://example.org/acr#Topic
+<https://example.org/acr#Topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://example.org/acr#Topic> <http://www.w3.org/2000/01/rdf-schema#label> "Topic" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

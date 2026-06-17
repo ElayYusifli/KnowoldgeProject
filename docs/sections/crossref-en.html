@@ -1,0 +1,656 @@
+<h2 id="crossreference" class="list">Cross-reference for Smart Academic Course Recommendation Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Smart Academic Course Recommendation Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Course" title="https://example.org/acr#Course">Course</a></li>
+  <li><a href="#DataSource" title="https://example.org/acr#DataSource">Data Source</a></li>
+  <li><a href="#Department" title="https://example.org/acr#Department">Department</a></li>
+  <li><a href="#Instructor" title="https://example.org/acr#Instructor">Instructor</a></li>
+  <li><a href="#Recommendation" title="https://example.org/acr#Recommendation">Recommendation</a></li>
+  <li><a href="#ResearchStudy" title="https://example.org/acr#ResearchStudy">Research Study</a></li>
+  <li><a href="#Skill" title="https://example.org/acr#Skill">Skill</a></li>
+  <li><a href="#Student" title="https://example.org/acr#Student">Student</a></li>
+  <li><a href="#StudentBehaviorSignal" title="https://example.org/acr#StudentBehaviorSignal">Student Behavior Signal</a></li>
+  <li><a href="#Topic" title="https://example.org/acr#Topic">Topic</a></li>
+ </ul>
+ <div class="entity" id="Course">
+  <h3>Course<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#Course</p>
+  <div class="comment">
+   <span class="markdown">A university course offered by a department.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#courseCode" title="https://example.org/acr#courseCode">course code</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#level" title="https://example.org/acr#level">course level</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#courseTitle" title="https://example.org/acr#courseTitle">course title</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#coversTopic" title="https://example.org/acr#coversTopic">covers topic</a> <sup class="type-op" title="object property">op</sup>, <a href="#credits" title="https://example.org/acr#credits">credits</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#developsSkill" title="https://example.org/acr#developsSkill">develops skill</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPrerequisite" title="https://example.org/acr#hasPrerequisite">has prerequisite</a> <sup class="type-op" title="object property">op</sup>, <a href="#offeredBy" title="https://example.org/acr#offeredBy">offered by</a> <sup class="type-op" title="object property">op</sup>, <a href="#taughtBy" title="https://example.org/acr#taughtBy">taught by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#completedCourse" title="https://example.org/acr#completedCourse">completed course</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPrerequisite" title="https://example.org/acr#hasPrerequisite">has prerequisite</a> <sup class="type-op" title="object property">op</sup>, <a href="#recommendedCourse" title="https://example.org/acr#recommendedCourse">recommended course</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataSource">
+  <h3>Data Source<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#DataSource</p>
+  <div class="comment">
+   <span class="markdown">A dataset, document, API, or catalog used to populate the knowledge graph.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#sourceFormat" title="https://example.org/acr#sourceFormat">source format</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sourceName" title="https://example.org/acr#sourceName">source name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#derivedFromSource" title="https://example.org/acr#derivedFromSource">derived from source</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Department">
+  <h3>Department<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#Department</p>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#offeredBy" title="https://example.org/acr#offeredBy">offered by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Instructor">
+  <h3>Instructor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#Instructor</p>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#taughtBy" title="https://example.org/acr#taughtBy">taught by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Recommendation">
+  <h3>Recommendation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#Recommendation</p>
+  <div class="comment">
+   <span class="markdown">A recommendation connecting a student to a course with an explanation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#confidenceScore" title="https://example.org/acr#confidenceScore">confidence score</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#explanation" title="https://example.org/acr#explanation">explanation</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#recommendedCourse" title="https://example.org/acr#recommendedCourse">recommended course</a> <sup class="type-op" title="object property">op</sup>, <a href="#recommendedFor" title="https://example.org/acr#recommendedFor">recommended for</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ResearchStudy">
+  <h3>Research Study<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#ResearchStudy</p>
+  <div class="comment">
+   <span class="markdown">A research work used to guide ontology, reasoning, data processing, or LLM integration decisions.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#informedByStudy" title="https://example.org/acr#informedByStudy">informed by study</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Skill">
+  <h3>Skill<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#Skill</p>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#developsSkill" title="https://example.org/acr#developsSkill">develops skill</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Student">
+  <h3>Student<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#Student</p>
+  <div class="comment">
+   <span class="markdown">A learner receiving course recommendations.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#completedCourse" title="https://example.org/acr#completedCourse">completed course</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasBehaviorSignal" title="https://example.org/acr#hasBehaviorSignal">has behavior signal</a> <sup class="type-op" title="object property">op</sup>, <a href="#interestedIn" title="https://example.org/acr#interestedIn">interested in</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#recommendedFor" title="https://example.org/acr#recommendedFor">recommended for</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="StudentBehaviorSignal">
+  <h3>Student Behavior Signal<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#StudentBehaviorSignal</p>
+  <div class="comment">
+   <span class="markdown">An observable student-related signal such as completed courses, interests, or target skills.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#signalType" title="https://example.org/acr#signalType">signal type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#signalValue" title="https://example.org/acr#signalValue">signal value</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasBehaviorSignal" title="https://example.org/acr#hasBehaviorSignal">has behavior signal</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Topic">
+  <h3>Topic<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#Topic</p>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#coversTopic" title="https://example.org/acr#coversTopic">covers topic</a> <sup class="type-op" title="object property">op</sup>, <a href="#interestedIn" title="https://example.org/acr#interestedIn">interested in</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#completedCourse" title="https://example.org/acr#completedCourse">completed course</a></li>
+  <li><a href="#coversTopic" title="https://example.org/acr#coversTopic">covers topic</a></li>
+  <li><a href="#derivedFromSource" title="https://example.org/acr#derivedFromSource">derived from source</a></li>
+  <li><a href="#developsSkill" title="https://example.org/acr#developsSkill">develops skill</a></li>
+  <li><a href="#hasBehaviorSignal" title="https://example.org/acr#hasBehaviorSignal">has behavior signal</a></li>
+  <li><a href="#hasPrerequisite" title="https://example.org/acr#hasPrerequisite">has prerequisite</a></li>
+  <li><a href="#informedByStudy" title="https://example.org/acr#informedByStudy">informed by study</a></li>
+  <li><a href="#interestedIn" title="https://example.org/acr#interestedIn">interested in</a></li>
+  <li><a href="#offeredBy" title="https://example.org/acr#offeredBy">offered by</a></li>
+  <li><a href="#recommendedCourse" title="https://example.org/acr#recommendedCourse">recommended course</a></li>
+  <li><a href="#recommendedFor" title="https://example.org/acr#recommendedFor">recommended for</a></li>
+  <li><a href="#taughtBy" title="https://example.org/acr#taughtBy">taught by</a></li>
+ </ul>
+ <div class="entity" id="completedCourse">
+  <h3>completed course<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#completedCourse</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Student" title="https://example.org/acr#Student">Student</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Course" title="https://example.org/acr#Course">Course</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="coversTopic">
+  <h3>covers topic<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#coversTopic</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Course" title="https://example.org/acr#Course">Course</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Topic" title="https://example.org/acr#Topic">Topic</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="derivedFromSource">
+  <h3>derived from source<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#derivedFromSource</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DataSource" title="https://example.org/acr#DataSource">Data Source</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="developsSkill">
+  <h3>develops skill<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#developsSkill</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Course" title="https://example.org/acr#Course">Course</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Skill" title="https://example.org/acr#Skill">Skill</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasBehaviorSignal">
+  <h3>has behavior signal<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#hasBehaviorSignal</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Student" title="https://example.org/acr#Student">Student</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#StudentBehaviorSignal" title="https://example.org/acr#StudentBehaviorSignal">Student Behavior Signal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasPrerequisite">
+  <h3>has prerequisite<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#hasPrerequisite</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Course" title="https://example.org/acr#Course">Course</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Course" title="https://example.org/acr#Course">Course</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="informedByStudy">
+  <h3>informed by study<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#informedByStudy</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ResearchStudy" title="https://example.org/acr#ResearchStudy">Research Study</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="interestedIn">
+  <h3>interested in<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#interestedIn</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Student" title="https://example.org/acr#Student">Student</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Topic" title="https://example.org/acr#Topic">Topic</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="offeredBy">
+  <h3>offered by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#offeredBy</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Course" title="https://example.org/acr#Course">Course</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Department" title="https://example.org/acr#Department">Department</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="recommendedCourse">
+  <h3>recommended course<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#recommendedCourse</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Recommendation" title="https://example.org/acr#Recommendation">Recommendation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Course" title="https://example.org/acr#Course">Course</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="recommendedFor">
+  <h3>recommended for<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#recommendedFor</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Recommendation" title="https://example.org/acr#Recommendation">Recommendation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Student" title="https://example.org/acr#Student">Student</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="taughtBy">
+  <h3>taught by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#taughtBy</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Course" title="https://example.org/acr#Course">Course</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Instructor" title="https://example.org/acr#Instructor">Instructor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#confidenceScore" title="https://example.org/acr#confidenceScore">confidence score</a></li>
+  <li><a href="#courseCode" title="https://example.org/acr#courseCode">course code</a></li>
+  <li><a href="#level" title="https://example.org/acr#level">course level</a></li>
+  <li><a href="#courseTitle" title="https://example.org/acr#courseTitle">course title</a></li>
+  <li><a href="#credits" title="https://example.org/acr#credits">credits</a></li>
+  <li><a href="#explanation" title="https://example.org/acr#explanation">explanation</a></li>
+  <li><a href="#signalType" title="https://example.org/acr#signalType">signal type</a></li>
+  <li><a href="#signalValue" title="https://example.org/acr#signalValue">signal value</a></li>
+  <li><a href="#sourceFormat" title="https://example.org/acr#sourceFormat">source format</a></li>
+  <li><a href="#sourceName" title="https://example.org/acr#sourceName">source name</a></li>
+ </ul>
+ <div class="entity" id="confidenceScore">
+  <h3>confidence score<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#confidenceScore</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Recommendation" title="https://example.org/acr#Recommendation">Recommendation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="courseCode">
+  <h3>course code<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#courseCode</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Course" title="https://example.org/acr#Course">Course</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="level">
+  <h3>course level<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#level</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Course" title="https://example.org/acr#Course">Course</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="courseTitle">
+  <h3>course title<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#courseTitle</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Course" title="https://example.org/acr#Course">Course</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="credits">
+  <h3>credits<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#credits</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Course" title="https://example.org/acr#Course">Course</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="explanation">
+  <h3>explanation<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#explanation</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Recommendation" title="https://example.org/acr#Recommendation">Recommendation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="signalType">
+  <h3>signal type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#signalType</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#StudentBehaviorSignal" title="https://example.org/acr#StudentBehaviorSignal">Student Behavior Signal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="signalValue">
+  <h3>signal value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#signalValue</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#StudentBehaviorSignal" title="https://example.org/acr#StudentBehaviorSignal">Student Behavior Signal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="sourceFormat">
+  <h3>source format<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#sourceFormat</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DataSource" title="https://example.org/acr#DataSource">Data Source</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="sourceName">
+  <h3>source name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://example.org/acr#sourceName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DataSource" title="https://example.org/acr#DataSource">Data Source</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

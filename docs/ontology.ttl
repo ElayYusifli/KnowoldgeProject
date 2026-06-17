@@ -1,0 +1,266 @@
+@prefix : <https://example.org/acr#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://example.org/acr#> .
+
+<https://example.org/acr#> rdf:type owl:Ontology ;
+                            <http://purl.org/dc/terms/created> "2026-06-17"^^xsd:date ;
+                            <http://purl.org/dc/terms/creator> "TODO: Team Name" ;
+                            <http://purl.org/dc/terms/description> "An ontology for modeling courses, students, prerequisites, skills, and academic recommendations." ;
+                            <http://purl.org/dc/terms/title> "Smart Academic Course Recommendation Ontology" ;
+                            owl:versionInfo "0.2.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://example.org/acr#completedCourse
+:completedCourse rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Student ;
+                 rdfs:range :Course ;
+                 rdfs:label "completed course" .
+
+
+###  https://example.org/acr#coversTopic
+:coversTopic rdf:type owl:ObjectProperty ;
+             rdfs:domain :Course ;
+             rdfs:range :Topic ;
+             rdfs:label "covers topic" .
+
+
+###  https://example.org/acr#derivedFromSource
+:derivedFromSource rdf:type owl:ObjectProperty ;
+                   rdfs:domain owl:Thing ;
+                   rdfs:range :DataSource ;
+                   rdfs:label "derived from source" .
+
+
+###  https://example.org/acr#developsSkill
+:developsSkill rdf:type owl:ObjectProperty ;
+               rdfs:domain :Course ;
+               rdfs:range :Skill ;
+               rdfs:label "develops skill" .
+
+
+###  https://example.org/acr#hasBehaviorSignal
+:hasBehaviorSignal rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Student ;
+                   rdfs:range :StudentBehaviorSignal ;
+                   rdfs:label "has behavior signal" .
+
+
+###  https://example.org/acr#hasPrerequisite
+:hasPrerequisite rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Course ;
+                 rdfs:range :Course ;
+                 rdfs:label "has prerequisite" .
+
+
+###  https://example.org/acr#informedByStudy
+:informedByStudy rdf:type owl:ObjectProperty ;
+                 rdfs:domain owl:Thing ;
+                 rdfs:range :ResearchStudy ;
+                 rdfs:label "informed by study" .
+
+
+###  https://example.org/acr#interestedIn
+:interestedIn rdf:type owl:ObjectProperty ;
+              rdfs:domain :Student ;
+              rdfs:range :Topic ;
+              rdfs:label "interested in" .
+
+
+###  https://example.org/acr#offeredBy
+:offeredBy rdf:type owl:ObjectProperty ;
+           rdfs:domain :Course ;
+           rdfs:range :Department ;
+           rdfs:label "offered by" .
+
+
+###  https://example.org/acr#recommendedCourse
+:recommendedCourse rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Recommendation ;
+                   rdfs:range :Course ;
+                   rdfs:label "recommended course" .
+
+
+###  https://example.org/acr#recommendedFor
+:recommendedFor rdf:type owl:ObjectProperty ;
+                rdfs:domain :Recommendation ;
+                rdfs:range :Student ;
+                rdfs:label "recommended for" .
+
+
+###  https://example.org/acr#taughtBy
+:taughtBy rdf:type owl:ObjectProperty ;
+          rdfs:domain :Course ;
+          rdfs:range :Instructor ;
+          rdfs:label "taught by" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://example.org/acr#confidenceScore
+:confidenceScore rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Recommendation ;
+                 rdfs:range xsd:decimal ;
+                 rdfs:label "confidence score" .
+
+
+###  https://example.org/acr#courseCode
+:courseCode rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Course ;
+            rdfs:range xsd:string ;
+            rdfs:label "course code" .
+
+
+###  https://example.org/acr#courseTitle
+:courseTitle rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Course ;
+             rdfs:range xsd:string ;
+             rdfs:label "course title" .
+
+
+###  https://example.org/acr#credits
+:credits rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Course ;
+         rdfs:range xsd:integer ;
+         rdfs:label "credits" .
+
+
+###  https://example.org/acr#explanation
+:explanation rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Recommendation ;
+             rdfs:range xsd:string ;
+             rdfs:label "explanation" .
+
+
+###  https://example.org/acr#level
+:level rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Course ;
+       rdfs:range xsd:integer ;
+       rdfs:label "course level" .
+
+
+###  https://example.org/acr#signalType
+:signalType rdf:type owl:DatatypeProperty ;
+            rdfs:domain :StudentBehaviorSignal ;
+            rdfs:range xsd:string ;
+            rdfs:label "signal type" .
+
+
+###  https://example.org/acr#signalValue
+:signalValue rdf:type owl:DatatypeProperty ;
+             rdfs:domain :StudentBehaviorSignal ;
+             rdfs:range xsd:string ;
+             rdfs:label "signal value" .
+
+
+###  https://example.org/acr#sourceFormat
+:sourceFormat rdf:type owl:DatatypeProperty ;
+              rdfs:domain :DataSource ;
+              rdfs:range xsd:string ;
+              rdfs:label "source format" .
+
+
+###  https://example.org/acr#sourceName
+:sourceName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :DataSource ;
+            rdfs:range xsd:string ;
+            rdfs:label "source name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://example.org/acr#Course
+:Course rdf:type owl:Class ;
+        rdfs:comment "A university course offered by a department." ;
+        rdfs:label "Course" .
+
+
+###  https://example.org/acr#DataSource
+:DataSource rdf:type owl:Class ;
+            rdfs:comment "A dataset, document, API, or catalog used to populate the knowledge graph." ;
+            rdfs:label "Data Source" .
+
+
+###  https://example.org/acr#Department
+:Department rdf:type owl:Class ;
+            rdfs:label "Department" .
+
+
+###  https://example.org/acr#Instructor
+:Instructor rdf:type owl:Class ;
+            rdfs:label "Instructor" .
+
+
+###  https://example.org/acr#Recommendation
+:Recommendation rdf:type owl:Class ;
+                rdfs:comment "A recommendation connecting a student to a course with an explanation." ;
+                rdfs:label "Recommendation" .
+
+
+###  https://example.org/acr#ResearchStudy
+:ResearchStudy rdf:type owl:Class ;
+               rdfs:comment "A research work used to guide ontology, reasoning, data processing, or LLM integration decisions." ;
+               rdfs:label "Research Study" .
+
+
+###  https://example.org/acr#Skill
+:Skill rdf:type owl:Class ;
+       rdfs:label "Skill" .
+
+
+###  https://example.org/acr#Student
+:Student rdf:type owl:Class ;
+         rdfs:comment "A learner receiving course recommendations." ;
+         rdfs:label "Student" .
+
+
+###  https://example.org/acr#StudentBehaviorSignal
+:StudentBehaviorSignal rdf:type owl:Class ;
+                       rdfs:comment "An observable student-related signal such as completed courses, interests, or target skills." ;
+                       rdfs:label "Student Behavior Signal" .
+
+
+###  https://example.org/acr#Topic
+:Topic rdf:type owl:Class ;
+       rdfs:label "Topic" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

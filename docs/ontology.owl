@@ -1,0 +1,456 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://example.org/acr#"
+     xml:base="https://example.org/acr"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://example.org/acr#">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-17</terms:created>
+        <terms:creator>TODO: Team Name</terms:creator>
+        <terms:description>An ontology for modeling courses, students, prerequisites, skills, and academic recommendations.</terms:description>
+        <terms:title>Smart Academic Course Recommendation Ontology</terms:title>
+        <owl:versionInfo>0.2.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://example.org/acr#completedCourse -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/acr#completedCourse">
+        <rdfs:domain rdf:resource="https://example.org/acr#Student"/>
+        <rdfs:range rdf:resource="https://example.org/acr#Course"/>
+        <rdfs:label>completed course</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.org/acr#coversTopic -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/acr#coversTopic">
+        <rdfs:domain rdf:resource="https://example.org/acr#Course"/>
+        <rdfs:range rdf:resource="https://example.org/acr#Topic"/>
+        <rdfs:label>covers topic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.org/acr#derivedFromSource -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/acr#derivedFromSource">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://example.org/acr#DataSource"/>
+        <rdfs:label>derived from source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.org/acr#developsSkill -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/acr#developsSkill">
+        <rdfs:domain rdf:resource="https://example.org/acr#Course"/>
+        <rdfs:range rdf:resource="https://example.org/acr#Skill"/>
+        <rdfs:label>develops skill</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.org/acr#hasBehaviorSignal -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/acr#hasBehaviorSignal">
+        <rdfs:domain rdf:resource="https://example.org/acr#Student"/>
+        <rdfs:range rdf:resource="https://example.org/acr#StudentBehaviorSignal"/>
+        <rdfs:label>has behavior signal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.org/acr#hasPrerequisite -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/acr#hasPrerequisite">
+        <rdfs:domain rdf:resource="https://example.org/acr#Course"/>
+        <rdfs:range rdf:resource="https://example.org/acr#Course"/>
+        <rdfs:label>has prerequisite</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.org/acr#informedByStudy -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/acr#informedByStudy">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://example.org/acr#ResearchStudy"/>
+        <rdfs:label>informed by study</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.org/acr#interestedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/acr#interestedIn">
+        <rdfs:domain rdf:resource="https://example.org/acr#Student"/>
+        <rdfs:range rdf:resource="https://example.org/acr#Topic"/>
+        <rdfs:label>interested in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.org/acr#offeredBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/acr#offeredBy">
+        <rdfs:domain rdf:resource="https://example.org/acr#Course"/>
+        <rdfs:range rdf:resource="https://example.org/acr#Department"/>
+        <rdfs:label>offered by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.org/acr#recommendedCourse -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/acr#recommendedCourse">
+        <rdfs:domain rdf:resource="https://example.org/acr#Recommendation"/>
+        <rdfs:range rdf:resource="https://example.org/acr#Course"/>
+        <rdfs:label>recommended course</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.org/acr#recommendedFor -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/acr#recommendedFor">
+        <rdfs:domain rdf:resource="https://example.org/acr#Recommendation"/>
+        <rdfs:range rdf:resource="https://example.org/acr#Student"/>
+        <rdfs:label>recommended for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.org/acr#taughtBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://example.org/acr#taughtBy">
+        <rdfs:domain rdf:resource="https://example.org/acr#Course"/>
+        <rdfs:range rdf:resource="https://example.org/acr#Instructor"/>
+        <rdfs:label>taught by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://example.org/acr#confidenceScore -->
+
+
+    <owl:DatatypeProperty rdf:about="https://example.org/acr#confidenceScore">
+        <rdfs:domain rdf:resource="https://example.org/acr#Recommendation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>confidence score</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.org/acr#courseCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://example.org/acr#courseCode">
+        <rdfs:domain rdf:resource="https://example.org/acr#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>course code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.org/acr#courseTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="https://example.org/acr#courseTitle">
+        <rdfs:domain rdf:resource="https://example.org/acr#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>course title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.org/acr#credits -->
+
+
+    <owl:DatatypeProperty rdf:about="https://example.org/acr#credits">
+        <rdfs:domain rdf:resource="https://example.org/acr#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>credits</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.org/acr#explanation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://example.org/acr#explanation">
+        <rdfs:domain rdf:resource="https://example.org/acr#Recommendation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>explanation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.org/acr#level -->
+
+
+    <owl:DatatypeProperty rdf:about="https://example.org/acr#level">
+        <rdfs:domain rdf:resource="https://example.org/acr#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>course level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.org/acr#signalType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://example.org/acr#signalType">
+        <rdfs:domain rdf:resource="https://example.org/acr#StudentBehaviorSignal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>signal type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.org/acr#signalValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://example.org/acr#signalValue">
+        <rdfs:domain rdf:resource="https://example.org/acr#StudentBehaviorSignal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>signal value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.org/acr#sourceFormat -->
+
+
+    <owl:DatatypeProperty rdf:about="https://example.org/acr#sourceFormat">
+        <rdfs:domain rdf:resource="https://example.org/acr#DataSource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>source format</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.org/acr#sourceName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://example.org/acr#sourceName">
+        <rdfs:domain rdf:resource="https://example.org/acr#DataSource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>source name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://example.org/acr#Course -->
+
+
+    <owl:Class rdf:about="https://example.org/acr#Course">
+        <rdfs:comment>A university course offered by a department.</rdfs:comment>
+        <rdfs:label>Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/acr#DataSource -->
+
+
+    <owl:Class rdf:about="https://example.org/acr#DataSource">
+        <rdfs:comment>A dataset, document, API, or catalog used to populate the knowledge graph.</rdfs:comment>
+        <rdfs:label>Data Source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/acr#Department -->
+
+
+    <owl:Class rdf:about="https://example.org/acr#Department">
+        <rdfs:label>Department</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/acr#Instructor -->
+
+
+    <owl:Class rdf:about="https://example.org/acr#Instructor">
+        <rdfs:label>Instructor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/acr#Recommendation -->
+
+
+    <owl:Class rdf:about="https://example.org/acr#Recommendation">
+        <rdfs:comment>A recommendation connecting a student to a course with an explanation.</rdfs:comment>
+        <rdfs:label>Recommendation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/acr#ResearchStudy -->
+
+
+    <owl:Class rdf:about="https://example.org/acr#ResearchStudy">
+        <rdfs:comment>A research work used to guide ontology, reasoning, data processing, or LLM integration decisions.</rdfs:comment>
+        <rdfs:label>Research Study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/acr#Skill -->
+
+
+    <owl:Class rdf:about="https://example.org/acr#Skill">
+        <rdfs:label>Skill</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/acr#Student -->
+
+
+    <owl:Class rdf:about="https://example.org/acr#Student">
+        <rdfs:comment>A learner receiving course recommendations.</rdfs:comment>
+        <rdfs:label>Student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/acr#StudentBehaviorSignal -->
+
+
+    <owl:Class rdf:about="https://example.org/acr#StudentBehaviorSignal">
+        <rdfs:comment>An observable student-related signal such as completed courses, interests, or target skills.</rdfs:comment>
+        <rdfs:label>Student Behavior Signal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/acr#Topic -->
+
+
+    <owl:Class rdf:about="https://example.org/acr#Topic">
+        <rdfs:label>Topic</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
