@@ -9,7 +9,7 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://example.org/acr#">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-17</terms:created>
-        <terms:creator>TODO: Team Name</terms:creator>
+        <terms:creator>Project Team</terms:creator>
         <terms:description>An ontology for modeling courses, students, prerequisites, skills, and academic recommendations.</terms:description>
         <terms:title>Smart Academic Course Recommendation Ontology</terms:title>
         <owl:versionInfo>0.2.0</owl:versionInfo>

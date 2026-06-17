@@ -8,7 +8,7 @@
 acr: a owl:Ontology ;
     dcterms:title "Smart Academic Course Recommendation Ontology" ;
     dcterms:description "An ontology for modeling courses, students, prerequisites, skills, and academic recommendations." ;
-    dcterms:creator "TODO: Team Name" ;
+    dcterms:creator "Project Team" ;
     dcterms:created "2026-06-17"^^xsd:date ;
     owl:versionInfo "0.2.0" .
 

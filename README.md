@@ -64,5 +64,4 @@ Publish the `docs/` folder with GitHub Pages and add the resulting URL to the re
 
 ## Team Members
 
-- TODO: Name Surname
-- TODO: Name Surname
+- Project Team

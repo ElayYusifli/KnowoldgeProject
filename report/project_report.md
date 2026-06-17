@@ -2,9 +2,7 @@
 
 ## Name & Email
 
-TODO: Name Surname, email@example.com
-
-TODO: Name Surname, email@example.com
+Project Team
 
 GitHub Repository: https://github.com/ElayYusifli/KnowoldgeProject
 

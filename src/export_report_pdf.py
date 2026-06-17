@@ -74,7 +74,7 @@ def build_pdf() -> None:
         topMargin=2 * cm,
         bottomMargin=2 * cm,
         title="Smart Academic Course Recommendation Knowledge Graph",
-        author="TODO: Team Name",
+        author="Project Team",
     )
 
     story = []
@@ -122,4 +122,3 @@ def build_pdf() -> None:
 
 if __name__ == "__main__":
     build_pdf()
-

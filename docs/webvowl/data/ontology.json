@@ -8,7 +8,7 @@
     },
     "iri" : "https://example.org/acr#",
     "version" : "0.2.0",
-    "author" : [ "TODO: Team Name" ],
+    "author" : [ "Project Team" ],
     "description" : {
       "undefined" : "An ontology for modeling courses, students, prerequisites, skills, and academic recommendations."
     },
@@ -16,7 +16,7 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "TODO: Team Name",
+        "value" : "Project Team",
         "type" : "label"
       } ],
       "created" : [ {

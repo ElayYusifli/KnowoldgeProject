@@ -1,6 +1,6 @@
 <https://example.org/acr#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://example.org/acr#> <http://purl.org/dc/terms/created> "2026-06-17"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://example.org/acr#> <http://purl.org/dc/terms/creator> "TODO: Team Name" .
+<https://example.org/acr#> <http://purl.org/dc/terms/creator> "Project Team" .
 <https://example.org/acr#> <http://purl.org/dc/terms/description> "An ontology for modeling courses, students, prerequisites, skills, and academic recommendations." .
 <https://example.org/acr#> <http://purl.org/dc/terms/title> "Smart Academic Course Recommendation Ontology" .
 <https://example.org/acr#> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.0" .
