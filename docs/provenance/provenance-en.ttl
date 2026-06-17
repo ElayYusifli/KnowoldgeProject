@@ -8,4 +8,4 @@
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:wasGeneratedAt "2026-06-17";
 .
-:agent0 a prov:Agent; foaf:name "Project Team".
+:agent0 a prov:Agent; foaf:name "Elay Yusifli 210315090".

@@ -8,7 +8,7 @@
     },
     "iri" : "https://example.org/acr#",
     "version" : "0.2.0",
-    "author" : [ "Project Team" ],
+    "author" : [ "Elay Yusifli 210315090" ],
     "description" : {
       "undefined" : "An ontology for modeling courses, students, prerequisites, skills, and academic recommendations."
     },
@@ -16,7 +16,7 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Project Team",
+        "value" : "Elay Yusifli 210315090",
         "type" : "label"
       } ],
       "created" : [ {
@@ -65,7 +65,7 @@
     "id" : "26",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "15",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "3",
@@ -92,7 +92,7 @@
     "id" : "33",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "15",
+    "id" : "17",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "36",
@@ -190,7 +190,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "17",
+    "id" : "15",
     "label" : {
       "IRI-based" : "string"
     }
@@ -258,7 +258,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "15",
+    "id" : "17",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -423,25 +423,25 @@
     "attributes" : [ "object" ],
     "id" : "13"
   }, {
-    "iri" : "https://example.org/acr#confidenceScore",
-    "baseIri" : "https://example.org/acr",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "confidenceScore",
-      "undefined" : "confidence score"
-    },
-    "domain" : "11",
-    "attributes" : [ "datatype" ],
-    "id" : "14"
-  }, {
     "iri" : "https://example.org/acr#courseTitle",
     "baseIri" : "https://example.org/acr",
-    "range" : "17",
+    "range" : "15",
     "label" : {
       "IRI-based" : "courseTitle",
       "undefined" : "course title"
     },
     "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://example.org/acr#confidenceScore",
+    "baseIri" : "https://example.org/acr",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "confidenceScore",
+      "undefined" : "confidence score"
+    },
+    "domain" : "11",
     "attributes" : [ "datatype" ],
     "id" : "16"
   }, {

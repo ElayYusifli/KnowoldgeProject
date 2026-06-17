@@ -2,7 +2,7 @@
 
 ## Name & Email
 
-Project Team
+Elay Yusifli 210315090
 
 GitHub Repository: https://github.com/ElayYusifli/KnowoldgeProject
 

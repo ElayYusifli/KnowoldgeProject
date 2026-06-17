@@ -74,7 +74,7 @@ def build_pdf() -> None:
         topMargin=2 * cm,
         bottomMargin=2 * cm,
         title="Smart Academic Course Recommendation Knowledge Graph",
-        author="Project Team",
+        author="Elay Yusifli 210315090",
     )
 
     story = []

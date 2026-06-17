@@ -8,7 +8,7 @@
 
 <https://example.org/acr#> rdf:type owl:Ontology ;
                             <http://purl.org/dc/terms/created> "2026-06-17"^^xsd:date ;
-                            <http://purl.org/dc/terms/creator> "Project Team" ;
+                            <http://purl.org/dc/terms/creator> "Elay Yusifli 210315090" ;
                             <http://purl.org/dc/terms/description> "An ontology for modeling courses, students, prerequisites, skills, and academic recommendations." ;
                             <http://purl.org/dc/terms/title> "Smart Academic Course Recommendation Ontology" ;
                             owl:versionInfo "0.2.0" .
