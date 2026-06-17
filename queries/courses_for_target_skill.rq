@@ -1,0 +1,13 @@
+PREFIX acr: <https://example.org/acr#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?code ?title ?skillLabel
+WHERE {
+  ?course a acr:Course ;
+          acr:courseCode ?code ;
+          acr:courseTitle ?title ;
+          acr:developsSkill ?skill .
+  ?skill rdfs:label ?skillLabel .
+  FILTER(CONTAINS(LCASE(?skillLabel), "sparql"))
+}
+

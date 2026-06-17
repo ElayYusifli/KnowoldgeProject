@@ -1,0 +1,13 @@
+@prefix acr: <https://example.org/acr#> .
+@prefix ex: <https://example.org/acr/resource/> .
+
+ex:student_001 a acr:Student ;
+    acr:completedCourse ex:course_CS101, ex:course_CS201 ;
+    acr:interestedIn ex:topic_Ontologies, ex:topic_Knowledge_Graphs .
+
+ex:rec_001 a acr:Recommendation ;
+    acr:recommendedFor ex:student_001 ;
+    acr:recommendedCourse ex:course_KE402 ;
+    acr:confidenceScore 0.82 ;
+    acr:explanation "The course matches the student's ontology and knowledge graph interests, but requires Database Systems." .
+

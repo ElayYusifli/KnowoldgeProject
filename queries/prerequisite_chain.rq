@@ -1,0 +1,11 @@
+PREFIX acr: <https://example.org/acr#>
+
+SELECT ?course ?title ?prerequisite ?prerequisiteTitle
+WHERE {
+  ?course a acr:Course ;
+          acr:courseTitle ?title ;
+          acr:hasPrerequisite+ ?prerequisite .
+  ?prerequisite acr:courseTitle ?prerequisiteTitle .
+}
+ORDER BY ?title ?prerequisiteTitle
+

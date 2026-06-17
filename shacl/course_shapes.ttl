@@ -1,0 +1,51 @@
+@prefix acr: <https://example.org/acr#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+acr:CourseShape a sh:NodeShape ;
+    sh:targetClass acr:Course ;
+    sh:property [
+        sh:path acr:courseCode ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path acr:courseTitle ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path acr:credits ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 1 ;
+        sh:maxInclusive 10 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path acr:level ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 1 ;
+        sh:maxInclusive 4 ;
+        sh:minCount 1 ;
+    ] .
+
+acr:RecommendationShape a sh:NodeShape ;
+    sh:targetClass acr:Recommendation ;
+    sh:property [
+        sh:path acr:recommendedFor ;
+        sh:class acr:Student ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path acr:recommendedCourse ;
+        sh:class acr:Course ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path acr:confidenceScore ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 1 ;
+    ] .
+

@@ -1,0 +1,11 @@
+PREFIX acr: <https://example.org/acr#>
+PREFIX ex: <https://example.org/acr/resource/>
+
+SELECT ?course ?title ?missingPrerequisite
+WHERE {
+  ex:rec_001 acr:recommendedCourse ?course .
+  ?course acr:courseTitle ?title ;
+          acr:hasPrerequisite ?missingPrerequisite .
+  FILTER NOT EXISTS { ex:student_001 acr:completedCourse ?missingPrerequisite }
+}
+

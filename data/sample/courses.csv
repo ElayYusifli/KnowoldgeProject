@@ -1,0 +1,7 @@
+code,title,credits,level,department,instructor,topics,skills,prerequisites
+CS101,Introduction to Programming,6,1,Computer Science,Dr Ada Yilmaz,"Programming;Algorithms","Python;Problem Solving",
+CS201,Data Structures,6,2,Computer Science,Dr Ada Yilmaz,"Algorithms;Data Structures","Algorithmic Thinking;Complexity Analysis",CS101
+CS310,Database Systems,5,3,Computer Science,Dr Cem Kaya,"Databases;Data Modeling","SQL;Schema Design",CS201
+AI401,Artificial Intelligence,6,4,Computer Science,Dr Deniz Arslan,"Artificial Intelligence;Search","Knowledge Representation;Reasoning",CS201
+KE402,Knowledge Engineering,5,4,Computer Science,Dr Elif Demir,"Ontologies;Knowledge Graphs","SPARQL;Ontology Modeling",CS310
+

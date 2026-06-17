@@ -1,0 +1,10 @@
+PREFIX acr: <https://example.org/acr#>
+
+SELECT ?level (COUNT(?course) AS ?courseCount)
+WHERE {
+  ?course a acr:Course ;
+          acr:level ?level .
+}
+GROUP BY ?level
+ORDER BY ?level
+

@@ -1,0 +1,12 @@
+PREFIX acr: <https://example.org/acr#>
+
+SELECT ?code ?title ?credits ?level
+WHERE {
+  ?course a acr:Course ;
+          acr:courseCode ?code ;
+          acr:courseTitle ?title ;
+          acr:credits ?credits ;
+          acr:level ?level .
+}
+ORDER BY ?code
+

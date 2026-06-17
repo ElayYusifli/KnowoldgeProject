@@ -1,0 +1,6 @@
+@prefix acr: <https://example.org/acr#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+acr: a owl:Ontology ;
+    owl:imports <https://example.org/acr/course-recommendation.ttl> .
+

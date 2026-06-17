@@ -1,0 +1,153 @@
+@prefix acr: <https://example.org/acr#> .
+@prefix ex: <https://example.org/acr/resource/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:course_AI401 a acr:Course ;
+    acr:courseCode "AI401" ;
+    acr:courseTitle "Artificial Intelligence" ;
+    acr:coversTopic ex:topic_Artificial_Intelligence,
+        ex:topic_Search ;
+    acr:credits 6 ;
+    acr:developsSkill ex:skill_Knowledge_Representation,
+        ex:skill_Reasoning ;
+    acr:hasPrerequisite ex:course_CS201 ;
+    acr:level 4 ;
+    acr:offeredBy ex:department_Computer_Science ;
+    acr:taughtBy ex:instructor_Dr_Deniz_Arslan .
+
+ex:rec_001 a acr:Recommendation ;
+    acr:confidenceScore 0.82 ;
+    acr:explanation "The course matches the student's ontology and knowledge graph interests, but requires Database Systems." ;
+    acr:recommendedCourse ex:course_KE402 ;
+    acr:recommendedFor ex:student_001 .
+
+ex:course_CS310 a acr:Course ;
+    acr:courseCode "CS310" ;
+    acr:courseTitle "Database Systems" ;
+    acr:coversTopic ex:topic_Data_Modeling,
+        ex:topic_Databases ;
+    acr:credits 5 ;
+    acr:developsSkill ex:skill_SQL,
+        ex:skill_Schema_Design ;
+    acr:hasPrerequisite ex:course_CS201 ;
+    acr:level 3 ;
+    acr:offeredBy ex:department_Computer_Science ;
+    acr:taughtBy ex:instructor_Dr_Cem_Kaya .
+
+ex:course_KE402 a acr:Course ;
+    acr:courseCode "KE402" ;
+    acr:courseTitle "Knowledge Engineering" ;
+    acr:coversTopic ex:topic_Knowledge_Graphs,
+        ex:topic_Ontologies ;
+    acr:credits 5 ;
+    acr:developsSkill ex:skill_Ontology_Modeling,
+        ex:skill_SPARQL ;
+    acr:hasPrerequisite ex:course_CS310 ;
+    acr:level 4 ;
+    acr:offeredBy ex:department_Computer_Science ;
+    acr:taughtBy ex:instructor_Dr_Elif_Demir .
+
+ex:instructor_Dr_Cem_Kaya a acr:Instructor ;
+    rdfs:label "Dr Cem Kaya" .
+
+ex:instructor_Dr_Deniz_Arslan a acr:Instructor ;
+    rdfs:label "Dr Deniz Arslan" .
+
+ex:instructor_Dr_Elif_Demir a acr:Instructor ;
+    rdfs:label "Dr Elif Demir" .
+
+ex:skill_Algorithmic_Thinking a acr:Skill ;
+    rdfs:label "Algorithmic Thinking" .
+
+ex:skill_Complexity_Analysis a acr:Skill ;
+    rdfs:label "Complexity Analysis" .
+
+ex:skill_Knowledge_Representation a acr:Skill ;
+    rdfs:label "Knowledge Representation" .
+
+ex:skill_Ontology_Modeling a acr:Skill ;
+    rdfs:label "Ontology Modeling" .
+
+ex:skill_Problem_Solving a acr:Skill ;
+    rdfs:label "Problem Solving" .
+
+ex:skill_Python a acr:Skill ;
+    rdfs:label "Python" .
+
+ex:skill_Reasoning a acr:Skill ;
+    rdfs:label "Reasoning" .
+
+ex:skill_SPARQL a acr:Skill ;
+    rdfs:label "SPARQL" .
+
+ex:skill_SQL a acr:Skill ;
+    rdfs:label "SQL" .
+
+ex:skill_Schema_Design a acr:Skill ;
+    rdfs:label "Schema Design" .
+
+ex:student_001 a acr:Student ;
+    acr:completedCourse ex:course_CS101,
+        ex:course_CS201 ;
+    acr:interestedIn ex:topic_Knowledge_Graphs,
+        ex:topic_Ontologies .
+
+ex:topic_Artificial_Intelligence a acr:Topic ;
+    rdfs:label "Artificial Intelligence" .
+
+ex:topic_Data_Modeling a acr:Topic ;
+    rdfs:label "Data Modeling" .
+
+ex:topic_Data_Structures a acr:Topic ;
+    rdfs:label "Data Structures" .
+
+ex:topic_Databases a acr:Topic ;
+    rdfs:label "Databases" .
+
+ex:topic_Programming a acr:Topic ;
+    rdfs:label "Programming" .
+
+ex:topic_Search a acr:Topic ;
+    rdfs:label "Search" .
+
+ex:course_CS101 a acr:Course ;
+    acr:courseCode "CS101" ;
+    acr:courseTitle "Introduction to Programming" ;
+    acr:coversTopic ex:topic_Algorithms,
+        ex:topic_Programming ;
+    acr:credits 6 ;
+    acr:developsSkill ex:skill_Problem_Solving,
+        ex:skill_Python ;
+    acr:level 1 ;
+    acr:offeredBy ex:department_Computer_Science ;
+    acr:taughtBy ex:instructor_Dr_Ada_Yilmaz .
+
+ex:instructor_Dr_Ada_Yilmaz a acr:Instructor ;
+    rdfs:label "Dr Ada Yilmaz" .
+
+ex:topic_Algorithms a acr:Topic ;
+    rdfs:label "Algorithms" .
+
+ex:topic_Knowledge_Graphs a acr:Topic ;
+    rdfs:label "Knowledge Graphs" .
+
+ex:topic_Ontologies a acr:Topic ;
+    rdfs:label "Ontologies" .
+
+ex:course_CS201 a acr:Course ;
+    acr:courseCode "CS201" ;
+    acr:courseTitle "Data Structures" ;
+    acr:coversTopic ex:topic_Algorithms,
+        ex:topic_Data_Structures ;
+    acr:credits 6 ;
+    acr:developsSkill ex:skill_Algorithmic_Thinking,
+        ex:skill_Complexity_Analysis ;
+    acr:hasPrerequisite ex:course_CS101 ;
+    acr:level 2 ;
+    acr:offeredBy ex:department_Computer_Science ;
+    acr:taughtBy ex:instructor_Dr_Ada_Yilmaz .
+
+ex:department_Computer_Science a acr:Department ;
+    rdfs:label "Computer Science" .
+

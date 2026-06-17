@@ -1,0 +1,12 @@
+PREFIX acr: <https://example.org/acr#>
+
+SELECT ?code ?title (COUNT(?skill) AS ?skillCount)
+WHERE {
+  ?course a acr:Course ;
+          acr:courseCode ?code ;
+          acr:courseTitle ?title ;
+          acr:developsSkill ?skill .
+}
+GROUP BY ?code ?title
+ORDER BY DESC(?skillCount)
+

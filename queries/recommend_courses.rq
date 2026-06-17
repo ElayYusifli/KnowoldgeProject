@@ -1,0 +1,16 @@
+PREFIX acr: <https://example.org/acr#>
+PREFIX ex: <https://example.org/acr/resource/>
+
+SELECT DISTINCT ?course ?title ?topic
+WHERE {
+  ex:student_001 acr:interestedIn ?topic .
+  ?course a acr:Course ;
+          acr:courseTitle ?title ;
+          acr:coversTopic ?topic .
+  FILTER NOT EXISTS {
+    ?course acr:hasPrerequisite ?prerequisite .
+    FILTER NOT EXISTS { ex:student_001 acr:completedCourse ?prerequisite }
+  }
+}
+ORDER BY ?title
+

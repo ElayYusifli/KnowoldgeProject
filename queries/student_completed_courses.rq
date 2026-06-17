@@ -1,0 +1,11 @@
+PREFIX acr: <https://example.org/acr#>
+PREFIX ex: <https://example.org/acr/resource/>
+
+SELECT ?code ?title
+WHERE {
+  ex:student_001 acr:completedCourse ?course .
+  ?course acr:courseCode ?code ;
+          acr:courseTitle ?title .
+}
+ORDER BY ?code
+
